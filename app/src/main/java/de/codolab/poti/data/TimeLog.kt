@@ -7,6 +7,6 @@ import java.util.*
 
 @Entity(tableName = "timeLog")
 data class TimeLog(@ColumnInfo(name = "type") var type: TimeLogType,
-                   @ColumnInfo(name = "date") var date: Date = Date(),
+                   @ColumnInfo(name = "date") var date: Calendar = Calendar.getInstance(),
                    @PrimaryKey(autoGenerate = true) var id: Long = 0
 )

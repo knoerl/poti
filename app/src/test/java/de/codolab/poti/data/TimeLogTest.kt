@@ -7,7 +7,7 @@ class TimeLogTest {
     @Test
     fun `Should return correct ID`() {
         // GIVEN
-        val date = Date()
+        val date = Calendar.getInstance()
         val timeLog = TimeLog(TimeLogType.IN, date, 123L)
 
         // WHEN
@@ -30,7 +30,7 @@ class TimeLogTest {
     @Test
     fun `Should return correct date`() {
         // GIVEN
-        val date = Date()
+        val date = Calendar.getInstance()
         val timeLog = TimeLog(TimeLogType.OUT, date)
 
         // WHEN
